@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartVille Community Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="logo-spin">
+        <div class="spin-ring"></div>
+        <div class="spin-ring spin-ring-2"></div>
+        <div class="spin-ring spin-ring-3"></div>
+        <span class="preloader-text">SV</span>
+      </div>
+      <p class="loading-text">Building Better Communities<span class="dots">...</span></p>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-container"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <i class="fas fa-city"></i>
+        </div>
+        <span class="logo-text">Smart<span class="accent">Ville</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#modules" class="nav-link">Modules</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.php" class="btn-nav">Log In</a>
+        <a href="signup.php" class="btn-nav btn-nav-primary">Sign Up</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="login.php" class="mobile-btn">Log In</a></li>
+      <li><a href="signup.php" class="mobile-btn mobile-btn-primary">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Segamat's #1 Community Platform</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-text="Community">Community</span>
+        <span class="title-line accent-line" data-text="of Hope">of Hope</span>
+      </h1>
+      <p class="hero-subtitle">Your space for innovation, collaboration, and the joy of community living. Connect, create, and celebrate together.</p>
+      <div class="hero-cta">
+        <a href="signup.php" class="btn-primary hero-btn">
+          <span>Get Started</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#about" class="btn-secondary hero-btn">
+          <i class="fas fa-play"></i>
+          <span>Learn More</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="1200">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Residents</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="350">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Events Hosted</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="screen-header">
+              <div class="screen-logo"><i class="fas fa-city"></i> SmartVille</div>
+            </div>
+            <div class="screen-event-card">
+              <div class="event-img-placeholder gradient-1"></div>
+              <div class="event-info">
+                <span class="event-tag free">FREE</span>
+                <h4>Gala of Hope</h4>
+                <p><i class="fas fa-calendar"></i> Oct 26, 2025</p>
+                <button class="join-btn">Join Now</button>
+              </div>
+            </div>
+            <div class="screen-event-card mini">
+              <div class="event-img-placeholder gradient-2"></div>
+              <div class="event-info">
+                <span class="event-tag paid">PAID</span>
+                <h4>Coachella Night</h4>
+                <p><i class="fas fa-calendar"></i> Nov 12, 2025</p>
+              </div>
+            </div>
+            <div class="screen-event-card mini">
+              <div class="event-img-placeholder gradient-3"></div>
+              <div class="event-info">
+                <span class="event-tag private">PRIVATE</span>
+                <h4>Fun Run 5K</h4>
+                <p><i class="fas fa-calendar"></i> Dec 1, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+      <div class="floating-card card-notif">
+        <i class="fas fa-bell"></i>
+        <div>
+          <strong>Event Approved!</strong>
+          <p>Gala of Hope is now live</p>
+        </div>
+      </div>
+      <div class="floating-card card-users">
+        <div class="avatar-stack">
+          <div class="avatar av1"></div>
+          <div class="avatar av2"></div>
+          <div class="avatar av3"></div>
+        </div>
+        <span><strong>240+</strong> joined today</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">About SmartVille</span>
+        <h2 class="section-title">Building Better <span class="gradient-text">Communities</span></h2>
+        <p class="section-sub">A housing-focused company based in Segamat, committed to strengthening community relationships and promoting better organization within housing areas.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card" data-animate="fadeLeft">
+          <div class="about-icon-wrap" style="--clr:#6c63ff">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To provide a centralized, structured platform where residents can connect, organize, and celebrate community life seamlessly.</p>
+        </div>
+        <div class="about-card" data-animate="fadeUp">
+          <div class="about-icon-wrap" style="--clr:#f72585">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>A trusted and reputable housing company expanding across Malaysia, setting the standard for smart, connected living environments.</p>
+        </div>
+        <div class="about-card" data-animate="fadeRight">
+          <div class="about-icon-wrap" style="--clr:#4cc9f0">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3>Our Values</h3>
+          <p>Innovation, efficiency, reliability, and above all â€” community well-being and social harmony at the heart of everything we do.</p>
+        </div>
+      </div>
+      <div class="problem-solution" data-animate="fadeUp">
+        <div class="problem-box">
+          <div class="ps-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <h3>The Problem</h3>
+          <ul>
+            <li><i class="fas fa-times-circle"></i> Residents rely on fragmented WhatsApp/word-of-mouth</li>
+            <li><i class="fas fa-times-circle"></i> Missed event information & poor coordination</li>
+            <li><i class="fas fa-times-circle"></i> No system to manage private/exclusive events</li>
+            <li><i class="fas fa-times-circle"></i> Weak community engagement & low participation</li>
+          </ul>
+        </div>
+        <div class="ps-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="solution-box">
+          <div class="ps-icon solution-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Our Solution</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Centralized web platform for all community events</li>
+            <li><i class="fas fa-check-circle"></i> Admin approval system for quality control</li>
+            <li><i class="fas fa-check-circle"></i> Public, Private & Paid event management</li>
+            <li><i class="fas fa-check-circle"></i> Real-time notifications & feedback system</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modules Section -->
+  <section id="modules" class="modules-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">System Design</span>
+        <h2 class="section-title">Core <span class="gradient-text">Modules</span></h2>
+        <p class="section-sub">Three powerful modules working together to deliver a seamless community experience.</p>
+      </div>
+      <div class="modules-tabs">
+        <button class="tab-btn active" data-tab="m1">
+          <i class="fas fa-users-cog"></i>
+          <span>User Management</span>
+        </button>
+        <button class="tab-btn" data-tab="m2">
+          <i class="fas fa-calendar-plus"></i>
+          <span>Event Creation</span>
+        </button>
+        <button class="tab-btn" data-tab="m3">
+          <i class="fas fa-star"></i>
+          <span>Participation & Feedback</span>
+        </button>
+      </div>
+      <div class="tab-content active" id="m1">
+        <div class="tab-inner">
+          <div class="tab-text" data-animate="fadeLeft">
+            <h3>User Management Module</h3>
+            <p>A robust three-tier user hierarchy ensuring secure, role-appropriate access for every member of the community.</p>
+            <div class="role-cards">
+              <div class="role-card admin">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                  <strong>Administrator</strong>
+                  <span>Full system control â€” manage users, approve events, monitor activity</span>
+                </div>
+              </div>
+              <div class="role-card organizer">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div>
+                  <strong>Organizer</strong>
+                  <span>Create & manage events, coordinate with participants</span>
+                </div>
+              </div>
+              <div class="role-card customer">
+                <i class="fas fa-user"></i>
+                <div>
+                  <strong>Resident / Customer</strong>
+                  <span>Browse events, register, participate, submit feedback</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feat"><i class="fas fa-check"></i> User Registration & Login</div>
+              <div class="feat"><i class="fas fa-check"></i> Profile Management</div>
+              <div class="feat"><i class="fas fa-check"></i> Password Reset</div>
+              <div class="feat"><i class="fas fa-check"></i> Account Deactivation</div>
+              <div class="feat"><i class="fas fa-check"></i> Input Validation</div>
+              <div class="feat"><i class="fas fa-check"></i> Secure Logout</div>
+            </div>
+          </div>
+          <div class="tab-visual" data-animate="fadeRight">
+            <div class="flow-diagram">
+              <div class="flow-node start">START</div>
+              <div class="flow-arrow"><i class="fas fa-chevron-down"></i></div>
+              <div class="flow-node">Choose Role</div>
+              <div class="flow-arrow"><i class="fas fa-chevron-down"></i></div>
+              <div class="flow-node">Register / Login</div>
+              <div class="flow-arrow"><i class="fas fa-chevron-down"></i></div>
+              <div class="flow-branch">
+                <div class="flow-node branch-node admin-node">Admin Panel</div>
+                <div class="flow-node branch-node user-node">User Dashboard</div>
+              </div>
+              <div class="flow-arrow"><i class="fas fa-chevron-down"></i></div>
+              <div class="flow-node end">END</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="m2">
+        <div class="tab-inner">
+          <div class="tab-text" data-animate="fadeLeft">
+            <h3>Event Creation & Management</h3>
+            <p>Organizers submit proposals through a structured form. All events go through an admin approval process before going live.</p>
+            <div class="event-types">
+              <div class="event-type-card free-card">
+                <i class="fas fa-gift"></i>
+                <strong>Free Events</strong>
+                <span>Open to all residents â€” instant confirmation</span>
+              </div>
+              <div class="event-type-card paid-card">
+                <i class="fas fa-ticket-alt"></i>
+                <strong>Paid Events</strong>
+                <span>Ticket pricing, online payment, attendance tracking</span>
+              </div>
+              <div class="event-type-card private-card">
+                <i class="fas fa-lock"></i>
+                <strong>Private Events</strong>
+                <span>Invite-only with guest list management</span>
+              </div>
+            </div>
+            <div class="feature-list">
+              <div class="feat"><i class="fas fa-check"></i> Event Proposal Submission</div>
+              <div class="feat"><i class="fas fa-check"></i> Admin Review & Approval</div>
+              <div class="feat"><i class="fas fa-check"></i> Real-time Notifications</div>
+              <div class="feat"><i class="fas fa-check"></i> Event Publishing</div>
+              <div class="feat"><i class="fas fa-check"></i> Venue Selection</div>
+              <div class="feat"><i class="fas fa-check"></i> Pending Status Tracking</div>
+            </div>
+          </div>
+          <div class="tab-visual" data-animate="fadeRight">
+            <div class="approval-flow">
+              <div class="af-step">
+                <div class="af-icon"><i class="fas fa-edit"></i></div>
+                <span>Submit Proposal</span>
+              </div>
+              <div class="af-line"></div>
+              <div class="af-step">
+                <div class="af-icon pending"><i class="fas fa-clock"></i></div>
+                <span>Pending Review</span>
+              </div>
+              <div class="af-line"></div>
+              <div class="af-step">
+                <div class="af-icon review"><i class="fas fa-search"></i></div>
+                <span>Admin Reviews</span>
+              </div>
+              <div class="af-line"></div>
+              <div class="af-step approved">
+                <div class="af-icon approved-icon"><i class="fas fa-check"></i></div>
+                <span>Published Live!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="m3">
+        <div class="tab-inner">
+          <div class="tab-text" data-animate="fadeLeft">
+            <h3>Event Participation & Feedback</h3>
+            <p>From browsing to attending to reviewing â€” a complete journey for every community member.</p>
+            <div class="feature-list">
+              <div class="feat"><i class="fas fa-check"></i> Browse Published Events</div>
+              <div class="feat"><i class="fas fa-check"></i> Instant Free Event Join</div>
+              <div class="feat"><i class="fas fa-check"></i> Invitation Validation for Private</div>
+              <div class="feat"><i class="fas fa-check"></i> Secure Payment for Paid Events</div>
+              <div class="feat"><i class="fas fa-check"></i> Post-event Rating & Comments</div>
+              <div class="feat"><i class="fas fa-check"></i> Feedback Analytics for Admins</div>
+            </div>
+          </div>
+          <div class="tab-visual" data-animate="fadeRight">
+            <div class="feedback-visual">
+              <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star half"></i>
+                <span>4.8 / 5.0</span>
+              </div>
+              <p class="feedback-quote">"SmartVille made it so easy to discover and join community events. Highly recommended!"</p>
+              <div class="feedback-author">
+                <div class="fa-avatar"></div>
+                <div>
+                  <strong>Resident, Segamat</strong>
+                  <span>Gala of Hope Attendee</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Preview Section -->
+  <section id="events" class="events-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">Community Events</span>
+        <h2 class="section-title">Upcoming <span class="gradient-text">Events</span></h2>
+        <p class="section-sub">Discover what's happening in your community and join the fun!</p>
+      </div>
+      <div class="events-filter" data-animate="fadeUp">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="free">Free</button>
+        <button class="filter-btn" data-filter="paid">Paid</button>
+        <button class="filter-btn" data-filter="private">Private</button>
+      </div>
+      <div class="events-grid">
+        <div class="event-card" data-type="free" data-animate="fadeUp">
+          <div class="event-card-img gradient-1">
+            <span class="event-badge free">FREE</span>
+            <div class="event-overlay">
+              <a href="login.php" class="join-event-btn">Join Now</a>
+            </div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="fas fa-calendar"></i> Oct 26, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> Community Hall</span>
+            </div>
+            <h3>Gala of Hope: Together, We Rise</h3>
+            <p>An evening of celebration, awareness, and fundraising for the community's future.</p>
+            <div class="event-footer">
+              <div class="attendees">
+                <div class="att-avatars">
+                  <div class="att-av"></div><div class="att-av"></div><div class="att-av"></div>
+                </div>
+                <span>240 attending</span>
+              </div>
+              <a href="login.php" class="btn-small">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-type="paid" data-animate="fadeUp" style="animation-delay:0.1s">
+          <div class="event-card-img gradient-2">
+            <span class="event-badge paid">PAID</span>
+            <div class="event-overlay">
+              <a href="login.php" class="join-event-btn">Join Now</a>
+            </div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="fas fa-calendar"></i> Nov 12, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> Polo Field</span>
+            </div>
+            <h3>Coachella Night Segamat</h3>
+            <p>Experience the magic of a music festival right in the heart of Segamat.</p>
+            <div class="event-footer">
+              <div class="attendees">
+                <div class="att-avatars">
+                  <div class="att-av"></div><div class="att-av"></div><div class="att-av"></div>
+                </div>
+                <span>180 attending</span>
+              </div>
+              <a href="login.php" class="btn-small">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-type="free" data-animate="fadeUp" style="animation-delay:0.2s">
+          <div class="event-card-img gradient-3">
+            <span class="event-badge free">FREE</span>
+            <div class="event-overlay">
+              <a href="login.php" class="join-event-btn">Join Now</a>
+            </div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="fas fa-calendar"></i> Dec 1, 2025</span>
+              <span><i class="fas fa-map-marker-alt"></i> Sport Court</span>
+            </div>
+            <h3>OUM Fun Run 5K</h3>
+            <p>Lace up your shoes and join the community for a morning of fitness and fun!</p>
+            <div class="event-footer">
+              <div class="attendees">
+                <div class="att-avatars">
+                  <div class="att-av"></div><div class="att-av"></div><div class="att-av"></div>
+                </div>
+                <span>320 attending</span>
+              </div>
+              <a href="login.php" class="btn-small">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-type="private" data-animate="fadeUp" style="animation-delay:0.3s">
+          <div class="event-card-img gradient-4">
+            <span class="event-badge private">PRIVATE</span>
+            <div class="event-overlay">
+              <a href="login.php" class="join-event-btn">Request Access</a>
+            </div>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <span><i class="fas fa-calendar"></i> Jan 5, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Field Recreation</span>
+            </div>
+            <h3>Residents VIP Mixer</h3>
+            <p>An exclusive gathering for invited community members to network and connect.</p>
+            <div class="event-footer">
+              <div class="attendees">
+                <div class="att-avatars">
+                  <div class="att-av"></div><div class="att-av"></div>
+                </div>
+                <span>50 invited only</span>
+              </div>
+              <a href="login.php" class="btn-small">Request</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="browse-all" data-animate="fadeUp">
+        <a href="login.php" class="btn-primary">
+          <span>Browse All Events</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">The People Behind SmartVille</span>
+        <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+        <p class="section-sub">A dedicated IT Technician Division committed to building a reliable, user-friendly community platform.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card" data-animate="fadeUp">
+          <div class="team-card-inner">
+            <div class="team-avatar-wrap">
+              <div class="team-avatar">SM</div>
+              <div class="team-glow"></div>
+            </div>
+            <div class="team-info">
+              <h3>Shahidah Muhyeddin</h3>
+              <span class="team-role">IT Manager</span>
+              <p>Leads the team by planning, coordinating, and ensuring the project meets required standards.</p>
+              <div class="team-id">2024259362</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card" data-animate="fadeUp" style="animation-delay:0.1s">
+          <div class="team-card-inner">
+            <div class="team-avatar-wrap">
+              <div class="team-avatar">FI</div>
+              <div class="team-glow"></div>
+            </div>
+            <div class="team-info">
+              <h3>Fareez Ikhwan</h3>
+              <span class="team-role">Assistant Manager & DB</span>
+              <p>Supports management while handling the database system â€” data storage, management, and security.</p>
+              <div class="team-id">2024237686</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card" data-animate="fadeUp" style="animation-delay:0.2s">
+          <div class="team-card-inner">
+            <div class="team-avatar-wrap">
+              <div class="team-avatar">FF</div>
+              <div class="team-glow"></div>
+            </div>
+            <div class="team-info">
+              <h3>Fatin Fareisha</h3>
+              <span class="team-role">System Engineer</span>
+              <p>Responsible for designing and maintaining the system structure for smooth performance and reliability.</p>
+              <div class="team-id">2024237374</div>
+            </div>
+          </div>
+        </div>
+        <div class="team-card" data-animate="fadeUp" style="animation-delay:0.3s">
+          <div class="team-card-inner">
+            <div class="team-avatar-wrap">
+              <div class="team-avatar">AH</div>
+              <div class="team-glow"></div>
+            </div>
+            <div class="team-info">
+              <h3>Ammar Hariz</h3>
+              <span class="team-role">Web Developer</span>
+              <p>Focuses on developing the website â€” handling coding, user interface, and overall web experience.</p>
+              <div class="team-id">2024287728</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="compare-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">SmartVille vs <span class="gradient-text">The Rest</span></h2>
+      </div>
+      <div class="compare-table" data-animate="fadeUp">
+        <div class="compare-header">
+          <div class="ch-feature">Feature</div>
+          <div class="ch-smartville highlighted">SmartVille</div>
+          <div class="ch-other">Meetup</div>
+          <div class="ch-other">Townscript</div>
+        </div>
+        <div class="compare-row">
+          <div class="cr-feature">Target Audience</div>
+          <div class="cr-smartville highlighted"><i class="fas fa-home"></i> Segamat Residents</div>
+          <div class="cr-other">Global</div>
+          <div class="cr-other">Global</div>
+        </div>
+        <div class="compare-row">
+          <div class="cr-feature">Event Management</div>
+          <div class="cr-smartville highlighted"><i class="fas fa-check"></i> Admin Approval</div>
+          <div class="cr-other">Minimal Control</div>
+          <div class="cr-other">Advanced Tools</div>
+        </div>
+        <div class="compare-row">
+          <div class="cr-feature">User Interface</div>
+          <div class="cr-smartville highlighted"><i class="fas fa-star"></i> Simple & Modern</div>
+          <div class="cr-other">Complex</div>
+          <div class="cr-other">Complex</div>
+        </div>
+        <div class="compare-row">
+          <div class="cr-feature">User Roles</div>
+          <div class="cr-smartville highlighted"><i class="fas fa-users"></i> Admin + Resident</div>
+          <div class="cr-other">User Only</div>
+          <div class="cr-other">User Only</div>
+        </div>
+        <div class="compare-row">
+          <div class="cr-feature">Community Focus</div>
+          <div class="cr-smartville highlighted"><i class="fas fa-heart"></i> Hyper-local</div>
+          <div class="cr-other">General</div>
+          <div class="cr-other">General</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">SmartVille</span></h2>
+        <p class="section-sub">Have questions or want to learn more? Reach out to us.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fadeLeft">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Location</strong>
+              <span>Segamat, Johor, Malaysia</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <span>info@smartville.my</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <span>+60 7-XXX XXXX</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <strong>Website</strong>
+              <span>www.smartville.my</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" data-animate="fadeRight" onsubmit="handleContact(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+            <label>Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+            <label>Your Email</label>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="" disabled selected>Select Subject</option>
+              <option>General Inquiry</option>
+              <option>Event Proposal</option>
+              <option>Technical Support</option>
+              <option>Partnership</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <label>Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon"><i class="fas fa-city"></i></div>
+          <span class="logo-text">Smart<span class="accent">Ville</span></span>
+        </div>
+        <p>Building Better Communities â€” your centralized platform for event management and community engagement in Segamat.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="#">User Management</a></li>
+          <li><a href="#">Event Creation</a></li>
+          <li><a href="#">Private Events</a></li>
+          <li><a href="#">Event Feedback</a></li>
+          <li><a href="#">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="signup.php">Create Account</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SmartVille Community Hub. All rights reserved. | CSC264 Group Project | Group JCDCS1104D</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-msg">Message sent successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
